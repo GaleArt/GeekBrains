@@ -30,7 +30,7 @@ p {
   color: #1F3F68;
 }
 
-input, textarea {
+.input-area {
   border: 1px solid #356EAD;
   box-sizing: border-box;
   border-radius: 10px;
