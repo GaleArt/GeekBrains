@@ -14,17 +14,29 @@ body {
 
 .menu {
   display: flex;
+  justify-content: space-between;
+}
+
+.middle__info {
+  width: 359px;
+}
+
+.middle__content {
+  display: flex;
+  justify-content: space-around;
 }
 
 p {
   font-size: 16px;
   line-height: 26px;
   color: #1F3F68;
+  width: 425px;
 }
 
 .h1_main {
   font-size: 64px;
   color: #1F3F68;
+  width: 510px;
 }
 
 .h2_contacts {
