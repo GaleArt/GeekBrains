@@ -56,6 +56,19 @@ p {
   color: #1F3F68;
 }
 
+.question {
+  width: 495px;
+}
+
+.contacts__form {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+
 .input-area {
   border: 1px solid #356EAD;
   box-sizing: border-box;
