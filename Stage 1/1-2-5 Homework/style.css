@@ -1,9 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: sans-serif;
 }
 
@@ -16,6 +13,16 @@ p {
   line-height: 26px;
   color: #1F3F68;
   width: 425px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+hr {
+  color: #4570A3;
+  height: 5px;
+  background-color: #83A0C2;
 }
 
 .container {
@@ -95,4 +102,9 @@ p {
 
 .woek {
   width: 495px;
+  color: white;
+}
+
+.footer {
+  background-color: #316099;
 }
