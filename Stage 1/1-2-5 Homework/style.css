@@ -7,6 +7,17 @@ body {
   font-family: sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1F3F68;
+  width: 425px;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -24,13 +35,6 @@ body {
 .middle__content {
   display: flex;
   justify-content: space-around;
-}
-
-p {
-  font-size: 16px;
-  line-height: 26px;
-  color: #1F3F68;
-  width: 425px;
 }
 
 .h1_main {
@@ -62,6 +66,7 @@ p {
 
 .contacts__form {
   display: flex;
+  justify-content: center;
 }
 
 .list {
@@ -86,4 +91,8 @@ p {
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+.woek {
+  width: 495px;
 }
