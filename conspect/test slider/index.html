@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сладер на чистом JS</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 <body>
-    <div id="viewport">
-        <div class="slider" style="left: 0">
-            <div class="slide"><img src="./img/bled-1899264_1280.jpg" alt=""></div>
-            <div class="slide"><img src="./img/cat-1455468_1280.jpg" alt=""></div>
-            <div class="slide"><img src="./img/france-2773030_1280.jpg" alt=""></div>
-            <div class="slide"><img src="./img/portrait-1462944_1280.jpg" alt=""></div>
-            <div class="slide"><img src="./img/woman-1948939_1280.jpg" alt=""></div>
-        </div>
-    </div>
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
-    <div id="viewSlider">
-        <div class="viewSlide"></div>
-        <div class="viewSlide"></div>
-        <div class="viewSlide"></div>
-        <div class="viewSlide"></div>
-        <div class="viewSlide"></div>
-    </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 
-    <button class="prev" id="prev">Назад</button>
-    <button class="next" id="next">Вперёд</button>
-    <script src="./script.js"></script>
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
 </body>
 </html>
