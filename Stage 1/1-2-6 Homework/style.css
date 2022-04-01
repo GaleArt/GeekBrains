@@ -79,6 +79,7 @@ hr {
   display: flex;
   justify-content: space-around;
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .card__h4 {
@@ -90,6 +91,8 @@ hr {
 }
 
 .card__info {
+  display: flex;
+  flex-direction: column;
   width: 359px;
   padding: 44px 32px;
   box-sizing: border-box;
@@ -105,6 +108,10 @@ hr {
   color: #5A98D0;
 }
 
+.card__img {
+  align-self: center;
+  margin-bottom: 51px;
+}
 
 .h1_main {
   font-weight: 300;
