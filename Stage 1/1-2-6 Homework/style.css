@@ -221,14 +221,19 @@ hr {
 .list {
   display: flex;
   justify-content: space-between;
-  list-style-type: decimal;
+  list-style-type: none;
   color: #FFFFFF;
   opacity: 1;
   padding: 64px 114px;
 }
 
 .list__item {
+  display: flex;
   width: 359px;
+}
+
+.list__element {
+  width: 42px;
 }
 
 .all__rights {
