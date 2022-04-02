@@ -48,12 +48,6 @@ body {
   text-align: center;
 }
 
-hr {
-  color: #4570A3;
-  height: 5px;
-  background-color: #83A0C2;
-}
-
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -180,7 +174,14 @@ hr {
   background-color: #316099;
 }
 
+.question__area {
+  display: flex;
+  justify-content: space-between;
+  padding: 91px 0 96px;
+}
+
 .footer__button {
+  align-self: center;
   background: #5A98D0;
   color: #FFFFFF;
   padding: 15px 80px;
@@ -202,17 +203,15 @@ hr {
 
 .question {
   width: 495px;
-  padding-top: 91px;
-  padding-left: 113px;
-  padding-bottom: 96px;
-}
-
-.question__area {
-  display: relative;
 }
 
 .quest {
   color: #FFFFFF;
+}
+
+hr {
+  opacity: 0.4;
+  border: 1px solid #FFFFFF;
 }
 
 .contacts__form {
