@@ -7,6 +7,30 @@ body {
   font-family: sans-serif;
   font-style: normal;
 }
+.h1_main {
+  font-weight: 300;
+  font-size: 64px;
+  color: #1F3F68;
+  width: 510px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+}
+
+.h2_contacts {
+  font-weight: 500;
+  font-size: 44px;
+  text-align: center;
+}
+
+.h3_main {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
 
 .text {
   font-size: 16px;
@@ -156,41 +180,39 @@ hr {
   background-color: #316099;
 }
 
+.footer__button {
+  background: #5A98D0;
+  color: #FFFFFF;
+  padding: 15px 80px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
 .woek {
+  width: 340.96px;
+  text-align: left;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 46px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
-}
-
-.h1_main {
-  font-weight: 300;
-  font-size: 64px;
-  color: #1F3F68;
-  width: 510px;
-  line-height: 74px;
-  letter-spacing: 0.04em;
-  margin-bottom: 32px;
-}
-
-.h2_contacts {
-  font-weight: 500;
-  font-size: 44px;
-  text-align: center;
-}
-
-.h3_main {
-  font-size: 36px;
-  text-align: center;
-  font-weight: 300;
-  line-height: 46px;
-  letter-spacing: 0.05em;
-  color: #000000;
+  padding-bottom: 32px;
 }
 
 .question {
   width: 495px;
+  padding-top: 91px;
+  padding-left: 113px;
+  padding-bottom: 96px;
+}
+
+.question__area {
+  display: relative;
+}
+
+.quest {
+  color: #FFFFFF;
 }
 
 .contacts__form {
