@@ -121,10 +121,6 @@ hr {
   margin-bottom: 51px;
 }
 
-.project {
-
-}
-
 .project__item {
   position: relative;
   flex-grow: 1;
@@ -149,10 +145,23 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+  margin-bottom: 112px;
 }
 
 .project__img {
   width: 100%;
+}
+
+.footer {
+  background-color: #316099;
+}
+
+.woek {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
 }
 
 .h1_main {
@@ -211,13 +220,4 @@ hr {
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
-}
-
-.woek {
-  width: 495px;
-  color: white;
-}
-
-.footer {
-  background-color: #316099;
 }
