@@ -214,12 +214,30 @@ hr {
   border: 1px solid #FFFFFF;
 }
 
-.contacts__form {
-  display: flex;
-  justify-content: space-around;
+.contact__area {
+
 }
 
 .list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: decimal;
+  color: #FFFFFF;
+  opacity: 1;
+  padding: 64px 114px;
+}
+
+.list__item {
+  width: 359px;
+}
+
+.all__rights {
+  padding-bottom: 64px;
+}
+
+/* Contacts page */
+
+.contacts__form {
   display: flex;
   justify-content: space-around;
 }
