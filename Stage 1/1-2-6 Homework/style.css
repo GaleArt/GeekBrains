@@ -120,10 +120,40 @@ hr {
   align-self: center;
   margin-bottom: 51px;
 }
-/*
+
+.project {
+
+}
+
+.project__item {
+  position: relative;
+  flex-grow: 1;
+}
+
+.project__item__margin {
+  margin-right: 32px;
+}
+
+.project__text {
+  position: absolute;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  top: 64px;
+  right: 64px;
+}
+
+.project__parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
 .project__img {
   width: 100%;
-}*/
+}
 
 .h1_main {
   font-weight: 300;
