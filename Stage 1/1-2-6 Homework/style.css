@@ -120,6 +120,10 @@ hr {
   align-self: center;
   margin-bottom: 51px;
 }
+/*
+.project__img {
+  width: 100%;
+}*/
 
 .h1_main {
   font-weight: 300;
@@ -145,8 +149,6 @@ hr {
   letter-spacing: 0.05em;
   color: #000000;
 }
-
-
 
 .question {
   width: 495px;
