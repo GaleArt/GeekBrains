@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   font-style: normal;
 }
+
 .h1_main {
   font-weight: 300;
   font-size: 64px;
@@ -63,6 +64,13 @@ body {
   height: 100%;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 42px;
+}
+
 .top__info {
   padding-top: 115px;
   flex-grow: 1;
@@ -88,13 +96,6 @@ body {
 
 .top__text {
   width: 425px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-top: 42px;
 }
 
 .middle {
