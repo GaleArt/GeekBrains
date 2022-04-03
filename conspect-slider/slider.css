@@ -9,12 +9,13 @@
 
 .level {
   display: flex;
-  margin: 10px;
-  padding: 10px;
 }
 
 .description {
   width: 250px;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
 }
 
 .content {
@@ -28,6 +29,7 @@
   border: 1px solid #000;
   margin: 10px;
   padding: 10px;
+  background-color: green;
 }
 
 .btn {
