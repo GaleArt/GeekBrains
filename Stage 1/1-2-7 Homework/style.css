@@ -69,10 +69,12 @@ body {
   justify-content: space-between;
   list-style-type: none;
   padding-top: 42px;
+  padding-bottom: 64px;
 }
 
 .top__info {
   padding-top: 115px;
+  padding-bottom: 190px;
   flex-grow: 1;
   background-image: url(img/top_background.png);
   background-repeat: no-repeat;
