@@ -302,6 +302,7 @@ hr {
 
   .middle__content {
     flex-direction: column;
+    align-items: center;
   }
 }
 
