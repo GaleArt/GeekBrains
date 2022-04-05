@@ -266,7 +266,7 @@ hr {
   }
 
   .card__info {
-    flex-direction: column;
+    margin-bottom: 32px;
   }
 }
 /* Мобилки */
