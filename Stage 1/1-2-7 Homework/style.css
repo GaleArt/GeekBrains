@@ -69,7 +69,6 @@ body {
   justify-content: space-between;
   list-style-type: none;
   padding-top: 42px;
-  padding-bottom: 64px;
 }
 
 .top__info {
@@ -250,7 +249,6 @@ hr {
 }
 
 /* Планшетыч */
-
 @media (max-width: 1025px) {
   .container {
     padding-left: 32px;
@@ -262,9 +260,29 @@ hr {
     background-size: 44%;
   }
 }
-
 /* Мобилки */
+@media (max-width: 667px) {
+  .menu {
+    padding-top: 24px;
+  }
 
+  .h1_main {
+    width: 100%;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .top__info {
+    padding-top: 36px;
+  }
+
+  .top__text {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 /* Contacts page */
