@@ -299,6 +299,10 @@ hr {
     line-height: 26px;
     padding: 0 8px;
   }
+
+  .middle__content {
+    flex-direction: column;
+  }
 }
 
 
