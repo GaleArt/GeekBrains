@@ -259,6 +259,15 @@ hr {
     background-position: right 280px;
     background-size: 44%;
   }
+
+  .middle__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card__info {
+    flex-direction: column;
+  }
 }
 /* Мобилки */
 @media (max-width: 667px) {
@@ -303,6 +312,10 @@ hr {
   .middle__content {
     flex-direction: column;
     align-items: center;
+  }
+
+  .card__info {
+
   }
 }
 
