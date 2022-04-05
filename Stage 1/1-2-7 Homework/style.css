@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -251,7 +251,21 @@ hr {
 
 /* Планшетыч */
 
+@media (max-width: 1025px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .top__info {
+    background-position: right 280px;
+    background-size: 44%;
+  }
+}
+
 /* Мобилки */
+
+
 
 /* Contacts page */
 
