@@ -130,10 +130,17 @@ body {
 }
 
 .card__link {
+  padding-top: 28px;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.05em;
   color: #5A98D0;
+  text-decoration: none;
+}
+
+.arrow {
+  padding-left: 24px;
+  height: 1em;
 }
 
 .card__img {
@@ -159,6 +166,13 @@ body {
   color: #FFFFFF;
   top: 64px;
   right: 64px;
+}
+
+.text__child {
+  top: 32px;
+  left: 32px;
+  right: auto;
+  text-align: left;
 }
 
 .project__parent {
@@ -315,6 +329,10 @@ hr {
   }
 
   .card__info {
+
+  }
+
+  .h3_main {
 
   }
 }
