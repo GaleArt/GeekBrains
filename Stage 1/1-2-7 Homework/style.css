@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
 
@@ -321,6 +321,11 @@ hr {
 }
 /* Мобилки */
 @media (max-width: 667px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .top {
     min-height: 376px;
     padding-bottom: 41px;
@@ -362,14 +367,82 @@ hr {
   .middle__content {
     flex-direction: column;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  .card__info {
-
+  .middle {
+    padding-top: 48px;
   }
 
   .h3_main {
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+  }
 
+  .card__info {
+    width: 100%;
+  }
+
+  .project__parent {
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+
+  .project__item__margin {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .project__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .question__area {
+    padding: 18px 0 41px;
+    flex-direction: column;
+  }
+
+  .question {
+    text-align: center;
+    width: 100%;
+  }
+
+  .woek {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .quest {
+    padding: 32px 0 40px;
+  }
+
+  .footer__button {
+    align-items: center;
+    width: 108px;
+    padding: 0;
+  }
+
+  .footer__two {
+    padding: 32px 15px;
+  }
+
+  .list__item {
+    width: 100%;
+    margin-left: 32px;
+    margin-bottom: 18px;
+  }
+
+  .all__rights {
+    padding-top: 19px;
+    text-align: center;
   }
 }
 
