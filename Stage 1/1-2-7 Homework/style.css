@@ -292,6 +292,13 @@ hr {
     top: 19px;
     left: 19px;
   }
+
+  .question__area {
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 124px 64px;
+  }
+
 }
 /* Мобилки */
 @media (max-width: 667px) {
