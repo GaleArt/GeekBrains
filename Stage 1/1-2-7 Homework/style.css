@@ -249,10 +249,6 @@ hr {
   width: 359px;
 }
 
-.list__element {
-  width: 42px;
-}
-
 .all__rights {
   padding-bottom: 64px;
   font-weight: 400;
@@ -294,11 +290,20 @@ hr {
   }
 
   .question__area {
-    display: flex;
     justify-content: space-between;
-    padding: 47px 124px 64px;
+    padding: 47px 92px 64px;
   }
 
+  .question {
+    width: 336px;
+  }
+
+  .footer__button {
+    align-items: center;
+    width: 133px;
+    height: 32px;
+    padding: 0;
+  }
 }
 /* Мобилки */
 @media (max-width: 667px) {
