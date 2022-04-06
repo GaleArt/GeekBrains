@@ -231,10 +231,6 @@ hr {
   border: 1px solid #FFFFFF;
 }
 
-.contact__area {
-
-}
-
 .list {
   display: flex;
   justify-content: space-between;
@@ -245,7 +241,6 @@ hr {
 }
 
 .list__item {
-  display: flex;
   width: 359px;
 }
 
@@ -303,6 +298,25 @@ hr {
     width: 133px;
     height: 32px;
     padding: 0;
+  }
+
+  .footer__two {
+    padding: 64px 124px;
+  }
+
+  .list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .list__item {
+    width: 515px;
+    margin-bottom: 25px;
+  }
+
+  .all__rights {
+    padding-top: 39px;
+    padding-bottom: 0;
   }
 }
 /* Мобилки */
