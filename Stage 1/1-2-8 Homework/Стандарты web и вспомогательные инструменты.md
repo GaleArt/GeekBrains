@@ -12,3 +12,17 @@
 Эти дополнительные задания, которые можно не выполнять.
 
 https://galeart.github.io/GaleArtWeb/
+
+ЗАМЕЧАНИЯ:
+Сергей Ермолов
+Артём, привет!
+В мобильной версии пристутсвует лишний отсуп с права.
+В остально отлично.
+Я отсупы сделал с помощью  
+Вот так:
+<ul class="footer_contacts_list">
+<li class="padding_contacts_list">1.    We are the best</li>
+<li class="padding_contacts_list">2.    +7 999 999 99 00</li>
+<li><a class="footer_list_mail" href="mailto:mail@example.com">3.
+   mail@example.com</a></li>
+</ul>
