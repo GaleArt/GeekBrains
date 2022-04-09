@@ -287,6 +287,18 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__header,
+  &__paragraph {
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.04em;
   }
 
   &__header {
@@ -295,8 +307,15 @@ hr {
     font-weight: 500;
     font-size: 44px;
     line-height: 74px;
-    letter-spacing: 0.04em;
     padding-bottom: 16px;
+  }
+
+  &__paragraph {
+    width: 780px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.6;
   }
 }
 
