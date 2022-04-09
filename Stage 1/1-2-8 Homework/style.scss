@@ -317,6 +317,15 @@ hr {
     line-height: 30px;
     opacity: 0.6;
   }
+
+  &__content {
+    color: #000000;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 
@@ -324,10 +333,7 @@ hr {
 
 /* Contacts page */
 
-.contacts__form {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 .input-area {
   border: 1px solid #356EAD;

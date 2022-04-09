@@ -356,8 +356,11 @@ hr {
   opacity: 0.6;
 }
 
-/* Contacts page */
-.contacts__form {
+.contact__content {
+  color: #000000;
+}
+
+.contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,6 +368,7 @@ hr {
       justify-content: space-around;
 }
 
+/* Contacts page */
 .input-area {
   border: 1px solid #356EAD;
   -webkit-box-sizing: border-box;
