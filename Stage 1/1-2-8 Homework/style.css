@@ -393,8 +393,17 @@ hr {
   line-height: 26px;
 }
 
+.contact__img {
+  padding-right: 18px;
+  vertical-align: middle;
+}
+
 .address {
   padding-top: 56px;
+}
+
+.paragraph__padding {
+  padding-bottom: 16px;
 }
 
 /* Contacts page */
