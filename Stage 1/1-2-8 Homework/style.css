@@ -312,8 +312,6 @@ hr {
 }
 
 .contact__top__text {
-  width: 780px;
-  height: 150px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,8 +326,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 79.5px;
-  left: 390px;
 }
 
 .contact__header {
