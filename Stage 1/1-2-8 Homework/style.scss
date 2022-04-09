@@ -295,19 +295,26 @@ hr {
   }
 
   &__header,
-  &__paragraph {
+  &__paragraph,
+  &__card__header,
+  &__card__paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.04em;
   }
 
   &__header {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 44px;
     line-height: 74px;
     padding-bottom: 16px;
+  }
+
+  &__paragraph,
+  &__card__paragraph {
+    opacity: 0.6;
   }
 
   &__paragraph {
@@ -315,20 +322,44 @@ hr {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    opacity: 0.6;
   }
 
   &__content {
     color: #000000;
+    margin: 0 212px;
   }
 
   &__form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  &__card__header,
+  &__card__paragraph {
+    width: 300px;
+    text-align: left;
+    color: #1F3F68;
+  }
+
+  &__card__header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 40px 0 24px;
+  }
+
+  &__card__paragraph {
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
-
+.address {
+  padding-top: 56px;
+}
 
 
 /* Contacts page */

@@ -333,19 +333,23 @@ hr {
   margin: auto;
 }
 
-.contact__header, .contact__paragraph {
+.contact__header, .contact__paragraph, .contact__card__header, .contact__card__paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   color: #FFFFFF;
   text-align: center;
   letter-spacing: 0.04em;
 }
 
 .contact__header {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 74px;
   padding-bottom: 16px;
+}
+
+.contact__paragraph, .contact__card__paragraph {
+  opacity: 0.6;
 }
 
 .contact__paragraph {
@@ -353,19 +357,45 @@ hr {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  opacity: 0.6;
 }
 
 .contact__content {
   color: #000000;
+  margin: 0 212px;
 }
 
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+
+.contact__card__header, .contact__card__paragraph {
+  width: 300px;
+  text-align: left;
+  color: #1F3F68;
+}
+
+.contact__card__header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 40px 0 24px;
+}
+
+.contact__card__paragraph {
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.address {
+  padding-top: 56px;
 }
 
 /* Contacts page */
