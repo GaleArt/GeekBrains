@@ -4,7 +4,7 @@
 }
 
 .container {
-
+  padding-left: 75px;
 }
 
 .level {
@@ -12,7 +12,7 @@
 }
 
 .description {
-  width: 250px;
+  width: 100px;
   background-color: aqua;
   margin: 10px;
   padding: 10px;
@@ -43,7 +43,7 @@ section { /* убрать схлопывание margin */
 nav { /* зафиксировать панель справа по центру */
   position: fixed;
   bottom: 50%;
-  right: 1em;
+  left: 1em;
   transform: translate(0, 50%);
 }
 nav a { /* стиль пунктов меню */

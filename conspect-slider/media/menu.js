@@ -6,7 +6,7 @@ window.addEventListener('scroll', function(e) {
 }, false);
 
 var linkNav = document.querySelectorAll('[href^="#nav"]'),
-    V = 2;  // скорость, может иметь дробное значение через точку
+    V = 0.5;  // скорость, может иметь дробное значение через точку
 for (var i = 0; i < linkNav.length; i++) {
   linkNav[i].onclick = function(){
     var w = window.pageYOffset,
