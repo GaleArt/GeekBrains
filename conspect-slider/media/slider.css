@@ -35,3 +35,23 @@
 .btn {
 
 }
+
+section { /* убрать схлопывание margin */
+  display: inline-block;
+  width: 100%;
+}
+nav { /* зафиксировать панель справа по центру */
+  position: fixed;
+  bottom: 50%;
+  right: 1em;
+  transform: translate(0, 50%);
+}
+nav a { /* стиль пунктов меню */
+  display: block;
+  margin-bottom: .5em;
+  border: .5em solid green;
+  border-radius: 100%;
+}
+.red { /* стиль активного пункта меню */
+  border: .5em solid red;
+}
