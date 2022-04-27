@@ -1,14 +1,19 @@
-0. Исправил косяк в таблице streams (данные в прошлом задании не записались,
-т.к. столбец finished_at должен был иметь не пустые значения):
+    0. Исправил косяк в таблице streams (данные в прошлом задании не записались,
+    т.к. столбец finished_at должен был иметь не пустые значения):
 INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (1, 3, 165, '18.08.2020', 34, '27.04.2022');
 INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (2, 2, 178, '02.10.2020', 37, '27.04.2022');
 INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (3, 1, 203, '12.11.2020', 35, '27.04.2022');
 INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (4, 1, 210, '03.12.2020', 41, '27.04.2022');
 
-1. Преобразовать дату начала потока в таблице потоков к виду год-месяц-день. Используйте команду UPDATE.
+    1. Преобразовать дату начала потока в таблице потоков к виду год-месяц-день. Используйте команду UPDATE.
+SELECT SUBSTR(started_at, 7, 4) || '-' || SUBSTR(started_at, 4, 2) || '-' || SUBSTR(started_at, 1, 2) FROM streams;
 
-
-2. Получите идентификатор и номер потока, запланированного на самую позднюю дату.
+    2. Получите идентификатор и номер потока, запланированного на самую позднюю дату.
+    Проверил, что работает:
+SELECT id, course_id, started_at FROM streams ORDER BY SUBSTR(started_at, 3, 4) DESC;
+    Ответ:
+.header on
+SELECT id, course_id FROM streams ORDER BY SUBSTR(started_at, 3, 4) DESC LIMIT 1;
 
 
 3. Покажите уникальные значения года по датам начала потоков обучения.
