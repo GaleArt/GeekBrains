@@ -1,11 +1,12 @@
     0. Исправил косяк в таблице streams (данные в прошлом задании не записались,
     т.к. столбец finished_at должен был иметь не пустые значения):
-INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (1, 3, 165, '18.08.2020', 34, '27.04.2022');
-INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (2, 2, 178, '02.10.2020', 37, '27.04.2022');
-INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (3, 1, 203, '12.11.2020', 35, '27.04.2022');
-INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (4, 1, 210, '03.12.2020', 41, '27.04.2022');
+INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (1, 3, 165, '18.08.2020', 34, '12.09.2020');
+INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (2, 2, 178, '02.10.2020', 37, '13.11.2020');
+INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (3, 1, 203, '12.11.2020', 35, '14.12.2020');
+INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at) VALUES (4, 1, 210, '03.12.2020', 41, '25.12.2020');
 
     1. Преобразовать дату начала потока в таблице потоков к виду год-месяц-день. Используйте команду UPDATE.
+    Ответ:
 SELECT SUBSTR(started_at, 7, 4) || '-' || SUBSTR(started_at, 4, 2) || '-' || SUBSTR(started_at, 1, 2) FROM streams;
 
     2. Получите идентификатор и номер потока, запланированного на самую позднюю дату.
@@ -15,10 +16,9 @@ SELECT id, course_id, started_at FROM streams ORDER BY SUBSTR(started_at, 4, 2) 
 .header on
 SELECT id, course_id FROM streams ORDER BY SUBSTR(started_at, 4, 2) DESC LIMIT 1;
 
-3. Покажите уникальные значения года по датам начала потоков обучения.
-SELECT SUBSTR(started_at, 7, 4) FROM streams ORDER BY SUBSTR(started_at, 1, 4) DESC;
-
-SELECT started_at FROM streams ORDER BY SUBSTR(started_at, 1, 10) DESC;
+    3. Покажите уникальные значения года по датам начала потоков обучения.
+    Я так понял уникальное значение - это id, поэтому:
+SELECT id, SUBSTR(started_at, 7, 4) AS 'year' FROM streams ORDER BY SUBSTR(started_at, 4, 2) DESC;
 
 4. Найдите количество преподавателей в базе данных. Выведите искомое значение в столбец с
 именем total_teachers.
