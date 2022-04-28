@@ -31,4 +31,4 @@ SELECT teacher_id, AVG(performance) FROM grades WHERE teacher_id = 1;
 
     7. Дополнительное задание (выполняется по желанию): найдите идентификаторы
 преподавателей, у которых средняя успеваемость по всем потокам меньше 4.8.
-SELECT * FROM grades WHERE performance = 4.8;
+SELECT teacher_id, AVG(performance) AS Avg FROM grades GROUP BY teacher_id HAVING AVG(performance) < 4.8;
