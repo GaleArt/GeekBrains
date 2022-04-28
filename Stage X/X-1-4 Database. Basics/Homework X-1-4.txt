@@ -27,7 +27,8 @@ SELECT COUNT(*) AS 'total_teachers' FROM teachers;
 SELECT started_at FROM streams ORDER BY SUBSTR(started_at, 4, 2) DESC LIMIT 2;
 
     6. Найдите среднюю успеваемости учеников по всем потокам преподавателя с идентификатором равным 1.
-
+SELECT teacher_id, AVG(performance) FROM grades WHERE teacher_id = 1;
 
     7. Дополнительное задание (выполняется по желанию): найдите идентификаторы
 преподавателей, у которых средняя успеваемость по всем потокам меньше 4.8.
+SELECT * FROM grades WHERE performance = 4.8;
