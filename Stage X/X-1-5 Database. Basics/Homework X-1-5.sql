@@ -42,3 +42,9 @@ SELECT
 FROM grades WHERE performance < 4.8;
 -- 5. Дополнительное задание. Найдите разницу между средней успеваемостью преподавателя с наивысшим соответствующим значением
 -- и средней успеваемостью преподавателя с наименьшим значением. Средняя успеваемость считается по всем потокам преподавателя.
+SELECT
+  MAX(grade) - MIN(grade) AS Difference
+FROM
+  (SELECT teacher_id, AVG(performance) AS grade
+FROM grades
+GROUP BY teacher_id);
