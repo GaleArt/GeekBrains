@@ -7,14 +7,15 @@ SELECT
 FROM streams WHERE students_amount >= 40;
 -- 2. Найдите два потока с самыми низкими значениями успеваемости.
 -- В отчет выведите номер потока, название курса, фамилию и имя преподавателя (одним столбцом), оценку успеваемости.
-
+.mode column
 SELECT
-  'student_surname',
-  'student_name',
-  'course_name',
-  grade
-FROM grades;
-
+  (SELECT number FROM streams WHERE id = stream_id) AS stream,
+  (SELECT name FROM courses WHERE id =
+    (SELECT course_id FROM streams WHERE id = stream_id)
+  ) AS course,
+  (SELECT SUBSTR(name, 1, 20) || ' ' || SUBSTR(surname, 1, 20) FROM teachers WHERE id = teacher_id) AS teacher,
+  performance
+FROM grades ORDER BY performance ASC LIMIT 2;
 -- 3. Найдите среднюю успеваемость всех потоков преподавателя Николая Савельева.
 -- В отчёт выведите идентификатор преподавателя и среднюю оценку по потокам.
 
