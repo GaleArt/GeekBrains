@@ -1,8 +1,7 @@
 -- 1. Выполнено. Представление в локальной версии БД оставил.
 -- 2. Выполнено. Вообще по-хорошему нужно было удалять и наименование курса, но для работы транзакции пойдёт :)
+-- 3. Выполнено. Сначала подумал, что нужна проверка ещё и типа числа, но такой триггер справляется :)
 
--- 3. Создайте триггер для таблицы успеваемости, который проверяет значение успеваемости на
--- соответствие диапазону чисел от 0 до 5 включительно.
 -- 4. Дополнительное задание. Создайте триггер для таблицы потоков, который проверяет, что
 -- дата начала потока больше текущей даты, а номер потока имеет наибольшее значение среди
 -- существующих номеров. При невыполнении условий необходимо вызвать ошибку с информативным сообщением.
@@ -25,3 +24,16 @@ DELETE FROM grades WHERE teacher_id = 3;
 DELETE FROM teachers WHERE id = 3;
 COMMIT;
 SELECT * FROM teachers;
+
+CREATE TRIGGER check_performance BEFORE INSERT
+ON grades
+BEGIN
+  SELECT CASE
+  WHEN
+    NEW.performance NOT BETWEEN 0 AND 5
+  THEN
+    RAISE(ABORT, 'Enter a number from 0 to 5')
+  END;
+END;
+INSERT INTO grades (teacher_id , stream_id, performance) VALUES (3, 1, 8);
+INSERT INTO grades (teacher_id , stream_id, performance) VALUES (3, 1, 'Справляется');
