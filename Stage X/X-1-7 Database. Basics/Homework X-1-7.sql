@@ -1,10 +1,8 @@
 -- 1. Выполнено. Представление в локальной версии БД оставил.
 -- 2. Выполнено. Вообще по-хорошему нужно было удалять и наименование курса, но для работы транзакции пойдёт :)
 -- 3. Выполнено. Сначала подумал, что нужна проверка ещё и типа числа, но такой триггер справляется :)
-
--- 4. Дополнительное задание. Создайте триггер для таблицы потоков, который проверяет, что
--- дата начала потока больше текущей даты, а номер потока имеет наибольшее значение среди
--- существующих номеров. При невыполнении условий необходимо вызвать ошибку с информативным сообщением.
+-- 4. Чтобы не городить огород решил не усложнять логику New.started_at. Поэтому потом в INSERT число такого формата.
+-- Плюс нужно будет перегнать формат в БД, но думаю для демонстрации работы достаточно :)
 CREATE VIEW course_info AS
   SELECT
     courses.name AS course_name,
@@ -37,3 +35,25 @@ BEGIN
 END;
 INSERT INTO grades (teacher_id , stream_id, performance) VALUES (3, 1, 8);
 INSERT INTO grades (teacher_id , stream_id, performance) VALUES (3, 1, 'Справляется');
+
+CREATE TRIGGER check_date BEFORE INSERT
+ON streams
+BEGIN
+  SELECT CASE
+  WHEN
+    (New.number <= (SELECT number FROM streams ORDER BY id DESC LIMIT 1))
+    OR (New.started_at <=
+        (SELECT
+          MAX(SUBSTR(started_at, 7, 4) || '-' ||
+          SUBSTR(started_at, 4, 2) || '-' ||
+          SUBSTR(started_at, 1, 2))
+        FROM streams))
+  THEN
+    RAISE(ABORT, 'Wrong date or stream_number!')
+  END;
+END;
+
+INSERT INTO streams (number) VALUES (3);
+INSERT INTO streams (started_at) VALUES (2011-11-11);
+INSERT INTO streams (id, course_id, number, started_at, students_amount, finished_at)
+VALUES (5, 3, 345, '2022-05-11', 29, '2022-05-21');
