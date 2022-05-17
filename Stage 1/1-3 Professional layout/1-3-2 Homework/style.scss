@@ -1,0 +1,115 @@
+@import url('http://fonts.cdnfonts.com/css/lato');
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__main,
+  &__users {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search {
+    padding-left: 41px;
+  }
+
+  &__account {
+    padding: 0 33px;
+  }
+}
+
+.index-top {
+  background-color: #F1E4E6;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    height: 764px;
+    margin-left: -230px;
+  }
+  &__text {
+    width: 405px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+  }
+  &__li {
+    width: 12px;
+    height: 93px;
+    background-color: #F16D7F;
+    margin: 0 16px 0 64px;
+  }
+  &__span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  &__red {
+    color: #F16D7F;
+    font-size: 37px;
+    line-height: 44.4px;
+  }
+}
+.index-middle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    &__child {
+      position: relative;
+      text-align: center;
+      width: 360px;
+      height: 260px;
+      p {
+        position: absolute;
+        left: 100px;
+        top: 105px;
+        width: 160px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        font-family: 'Lato';
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+      }
+      span {
+        color: #F16D7F;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+      }
+    }
+    .lux {
+      margin-top: 30px;
+      width: 1140px;
+      height: 180px;
+      p {
+        left: 490px;
+        top: 55px;
+      }
+    }
+  }
+}
