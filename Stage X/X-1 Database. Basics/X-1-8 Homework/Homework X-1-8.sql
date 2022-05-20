@@ -1,8 +1,10 @@
 -- 1. Выполнено. Оставил еще количество потоков чтобы легче было проверять.
--- 2. Добавил нового учителя, который еще не провел ни одного занятия для проверки.
+-- 2. Выполнено. Добавил нового учителя, который еще не провел ни одного занятия для проверки.
 -- Немного не понял проблему: если написать как в методичке, т.е.
 -- WINDOW w_teachers AS (PARTITION BY teachers.id) перед сортировкой и сделать ссылку в OVER, то средний считается по всем учителям
--- 3.
+-- 3. Выполнено. Немного не понятна пока практическая реализация. Т.е. как вызывается работа индексов?
+-- Предлагаемая структура индексов ниже. Performance не добавлял, поскольку таблица academic_performance по логике и является связкой teachers и streams
+-- Предполагаю, что такая конструкция будет работать (streams_idx), но насколько такая структура рабочая не знаю как проверить
 -- 4. Скриншот в архиве. Я и до этого пользовался чем-то подобным: "DB Browser (SQLite)" https://sqlitebrowser.org/
 -- 5. Дополнительное задание не делал, не успеваю блин :(
 SELECT DISTINCT
@@ -24,16 +26,5 @@ SELECT DISTINCT
       ON grades.teacher_id = teachers.id
   ORDER BY teachers.surname, teachers.name;
 
--- 3. Какие индексы надо создать для максимально быстрого выполнения представленного запроса?
---
--- SELECT
--- surname,
--- name,
--- number,
--- performance
--- FROM academic_performance
--- JOIN teachers
--- ON academic_performance.teacher_id = teachers.id
--- JOIN streams
--- ON academic_performance.stream_id = streams.id
--- WHERE number >= 200;
+CREATE INDEX teacher_surname_name_idx ON teachers(surname, name);
+CREATE INDEX streams_idx ON streams(number) WHERE number >= 200;
