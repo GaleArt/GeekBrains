@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Professional layout</title>
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <div class="menu">
+        <div class="menu__main">
+          <div class="menu__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo"></a>
+          </div>
+          <div class="menu__search">
+            <a href="#"><img src="assets/search.png" alt="search"></a>
+          </div>
+        </div>
+        <div class="menu__users">
+          <div id="btn" onclick="showMenu()" class="menu__burger">
+            <a href="#"><img src="assets/burger.png" alt="burger"></a>
+          </div>
+          <div class="menu__account">
+            <a href="#"><img src="assets/account.png" alt="account"></a>
+          </div>
+          <div class="menu__basket">
+            <a href="#"><img src="assets/basket.png" alt="basket"></a>
+          </div>
+        </div>
+      </div>
+      <div id='menu' style="display:none;" class="menu-box">
+        <div id="btn2" onclick="closeMenu()" class="menu-box__btn">
+          <a href="#"><img src="assets/close.png" alt="close button"></a>
+        </div>
+        <h1 class="menu-box__header">menu</h1>
+        <div class="menu-box__item">
+          <h2 class="menu-box__item-text">man</h2>
+          <a class="menu-box__item-link" href="#">Accessories</a>
+          <a class="menu-box__item-link" href="#">Bags</a>
+          <a class="menu-box__item-link" href="#">Denim</a>
+          <a class="menu-box__item-link" href="#">T-Shirts</a>
+        </div>
+        
+        <div class="menu-box__item">
+          <h2 class="menu-box__item-text">woman</h2>
+          <a class="menu-box__item-link" href="#">Accessories</a>
+          <a class="menu-box__item-link" href="#">Jackets & Coats</a>
+          <a class="menu-box__item-link" href="#">Polos</a>
+          <a class="menu-box__item-link" href="#">T-Shirts</a>
+          <a class="menu-box__item-link" href="#">Shirts</a>
+        </div>
+    
+        <div class="menu-box__item">
+          <h2 class="menu-box__item-text">kids</h2>
+          <a class="menu-box__item-link" href="#">Accessories</a>
+          <a class="menu-box__item-link" href="#">Jackets & Coats</a>
+          <a class="menu-box__item-link" href="#">Polos</a>
+          <a class="menu-box__item-link" href="#">T-Shirts</a>
+          <a class="menu-box__item-link" href="#">Shirts</a>
+          <a class="menu-box__item-link" href="#">Bags</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-top">
+    <div class="index-top__content container">
+      <div class="index-top__img">
+        <img src="assets/topImg.png" alt="top image">
+      </div>
+      <div class="index-top__li"></div>
+      <div class="index-top__text">
+          <h1>THE BRAND</h1>
+          <p>OF LUXERIOUS<span> FASHION</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-middle container">
+    <div class="index-middle__img">
+
+      <div class="index-middle__img__child">
+        <a href="#">		
+        <img src="assets/4women.jpg" alt="for women">
+        <p>30% OFF<span>FOR WOMEN</span></p>
+        </a>
+     </div>
+
+      <div class="index-middle__img__child">
+        <a href="#">
+          <img src="assets/4men.jpg" alt="for men">
+          <p>HOT DEAL<span>FOR MEN</span></p>
+        </a>
+      </div>
+
+      <div class="index-middle__img__child">
+        <a href="#">
+          <img src="assets/4kids.jpg" alt="for kids">
+          <p>NEW ARRIVALS<span>FOR KIDS</span></p>
+        </a>
+      </div>
+    </div>
+    <div class="index-middle__img">
+      <div class="index-middle__img__child lux">
+        <a href="#">
+          <img src="assets/luxirous.jpg" alt="luxirous">
+          <p>LUXIROUS & TRENDY<span>ACCESORIES</span></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="index-featured container">
+    <h3>Fetured Items</h3>
+    <p>Shop for items based on what we featured in this week</p>
+    <div class="index-featured__area">
+      <div class="index-featured__card">
+        <a href="#"><img class="index-featured__card__img" 
+          src="assets/featured-1.jpg" alt="card-1"></a>
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+
+      <div class="index-featured__card">
+        <div class="index-featured__card__img">
+          <a href="#"><img src="assets/featured-2.jpg" alt="card-2"></a>
+        </div>
+        
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+
+      <div class="index-featured__card">
+        <img class="index-featured__card__img" src="assets/featured-3.jpg" alt="card-3">
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+
+      <div class="index-featured__card">
+        <img class="index-featured__card__img" src="assets/featured-4.jpg" alt="card-4">
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+
+      <div class="index-featured__card">
+        <img class="index-featured__card__img" src="assets/featured-5.jpg" alt="card-5">
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+
+      <div class="index-featured__card">
+        <img class="index-featured__card__img" src="assets/featured-6.jpg" alt="card-6">
+        <div class="index-featured__card__text">
+          <h4>ELLERY X M'O CAPSULE</h4>
+          <p>Known for her sculptural takes on traditional tailoring, 
+            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+          <h5>$52.00</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-featured__button">Browse All Product</div>
+  </div>
+
+  <div class="index-bottom">
+    <div class="index-bottom__content container">
+      <div class="index-bottom__item">
+        <img src="assets/bottom1.png" alt="delivery">
+      </div>
+      <div class="index-bottom__item">
+        <img src="assets/bottom2.png" alt="sales">
+      </div>
+      <div class="index-bottom__item">
+        <img src="assets/bottom3.png" alt="quality">
+      </div>
+      <div class="index-bottom__item">
+        <div class="index-bottom__item__header">Free Delivery</div>
+        <div class="index-bottom__item__text">Worldwide delivery on all. 
+          Authorit tively morph next-generation innov tion with extensive models.</div>
+      </div>
+      <div class="index-bottom__item">
+        <div class="index-bottom__item__header">Sales & discounts</div>
+        <div class="index-bottom__item__text">Worldwide delivery on all. 
+          Authorit tively morph next-generation innov tion with extensive models.</div>
+      </div>
+      <div class="index-bottom__item">
+        <div class="index-bottom__item__header">Quality assurance</div>
+        <div class="index-bottom__item__text">Worldwide delivery on all. 
+          Authorit tively morph next-generation innov tion with extensive models.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer container">
+    footer
+  </div>
+  <script src="homework.js"></script>
+</body>
+</html>
