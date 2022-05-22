@@ -470,17 +470,23 @@
           align-items: center;
   color: #222224;
   opacity: 0.67;
-  width: 322px;
+  width: 256px;
   height: 46px;
-  border: none;
+  border: 1px solid #E1E1E1;
   border-radius: 23px 0 0 23px;
   padding-left: 22px;
 }
 
+.footer__subscribe__form__input:hover, .footer__subscribe__form__input:focus {
+  border: 1px solid #E05C6E;
+  outline: none;
+}
+
 .footer__subscribe__form__btn {
   z-index: 2;
-  color: #F26376;
-  background: #ffffff;
+  color: #FFFFFF;
+  background: #E05C6E;
+  border: 1px solid #E05C6E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,13 +505,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  margin-left: -66px;
   border-radius: 0 24px 24px 0;
-}
-
-.footer__subscribe__form__btn:hover {
-  color: #FFFFFF;
-  background: #E05C6E;
+  margin-left: -1px;
 }
 
 .copyright {
