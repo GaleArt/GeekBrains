@@ -250,7 +250,7 @@
 }
 
 .index-featured__area {
-  padding-top: 48px;
+  padding: 48px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +306,25 @@
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.index-featured__button {
+  text-decoration: none;
+  width: 211px;
+  padding: 14px 38px;
+  background: #ffffff;
+  border: 1px solid #FF6A6A;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.index-featured__button:hover {
+  background: #F16D7F;
+  color: #FFFFFF;
 }
 
 .index-bottom {

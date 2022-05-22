@@ -176,6 +176,7 @@
 .index-featured {
   padding: 96px 0;
   text-align: center;
+
   h3 {
     margin: 0;
     font-family: 'Lato';
@@ -194,7 +195,7 @@
     color: #9F9F9F;
   }
   &__area {
-    padding-top: 48px;
+    padding: 48px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -238,6 +239,23 @@
       line-height: 19px;
       color: #F16D7F;
     }
+  }
+  &__button {
+    text-decoration: none;
+    width: 211px;
+    padding: 14px 38px;
+    background: #ffffff;
+    border: 1px solid #FF6A6A;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+  }
+  &__button:hover {
+    background: #F16D7F;
+    color: #FFFFFF;
   }
 }
 
