@@ -363,6 +363,8 @@
       }
       &__btn {
         z-index: 2;
+        color: #F26376;
+        background: #ffffff;
         display: flex;
         text-decoration: none;
         text-align: center;
@@ -370,15 +372,17 @@
         justify-content: center;
         height: 48px;
         width: 100px;
-        background: #E05C6E;
         font-family: 'Lato';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #FFFFFF;
         margin-left: -66px;
         border-radius: 0 24px 24px 0;
+      }
+      &__btn:hover {
+        color: #FFFFFF;
+        background: #E05C6E;
       }
     }
   }

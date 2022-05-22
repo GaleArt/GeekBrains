@@ -479,6 +479,8 @@
 
 .footer__subscribe__form__btn {
   z-index: 2;
+  color: #F26376;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,15 +494,18 @@
           justify-content: center;
   height: 48px;
   width: 100px;
-  background: #E05C6E;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
   margin-left: -66px;
   border-radius: 0 24px 24px 0;
+}
+
+.footer__subscribe__form__btn:hover {
+  color: #FFFFFF;
+  background: #E05C6E;
 }
 
 .copyright {
