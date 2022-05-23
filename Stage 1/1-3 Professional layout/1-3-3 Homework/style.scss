@@ -426,3 +426,18 @@
     }
   }
 }
+
+.catalog {
+  &__header {
+    background: #F8F3F4;
+    height: 148px;
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__filter {
+
+  }
+}

@@ -567,4 +567,21 @@
 .copyright__social__img:hover svg path {
   fill: white;
 }
+
+.catalog__header {
+  background: #F8F3F4;
+  height: 148px;
+}
+
+.catalog__header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
