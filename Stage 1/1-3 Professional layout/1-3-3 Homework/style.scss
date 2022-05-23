@@ -440,4 +440,53 @@
   &__filter {
 
   }
+  &__carousel {
+    height: 777px;
+    background: #F7F7F7;
+    &__area {
+      width: 100%;
+	    overflow: hidden;
+	    position: relative;
+    }
+    &__btn__prev,
+    &__btn__next {
+      border: none;
+      outline: none;
+      position: absolute;
+		  top: 50%;
+		  left: 20px;
+		  width: 47px;
+		  height: 47px;
+		  transform: translateY(-50%) translateZ(0);
+		  cursor: pointer;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  z-index: 3;
+      background: rgba(42, 42, 42, 0.15);
+      color: #F16D7F;
+    }
+    &__btn__next {
+      left: auto;
+			right: 20px;
+    }
+    &__wrap {
+      display: flex;
+		  transition: transform .5s;
+		  will-change: transform;
+		  position: relative;
+		  z-index: 1;
+		  height: 100%;
+    }
+    &__item {
+      flex: 0 0 100%;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+    }
+    &__img {
+      object-fit: cover;
+			display: block;
+    }
+  }
 }

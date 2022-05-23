@@ -584,4 +584,74 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.catalog__carousel {
+  height: 777px;
+  background: #F7F7F7;
+}
+
+.catalog__carousel__area {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.catalog__carousel__btn__prev, .catalog__carousel__btn__next {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  width: 47px;
+  height: 47px;
+  -webkit-transform: translateY(-50%) translateZ(0);
+          transform: translateY(-50%) translateZ(0);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 3;
+  background: rgba(42, 42, 42, 0.15);
+  color: #F16D7F;
+}
+
+.catalog__carousel__btn__next {
+  left: auto;
+  right: 20px;
+}
+
+.catalog__carousel__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.catalog__carousel__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog__carousel__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
