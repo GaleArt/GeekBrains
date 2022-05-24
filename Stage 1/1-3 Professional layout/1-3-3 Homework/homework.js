@@ -67,10 +67,10 @@ function closeMenu() {
 	}
 
 	let a = new Carousel({
-		"main": ".catalog__carousel__area",
-		"wrap": ".catalog__carousel__wrap",
-		"prev": ".catalog__carousel__btn__prev",
-		"next": ".catalog__carousel__btn__next"
+		"main": ".product__carousel__area",
+		"wrap": ".product__carousel__wrap",
+		"prev": ".product__carousel__btn__prev",
+		"next": ".product__carousel__btn__next"
 	});
 
 })();

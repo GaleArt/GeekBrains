@@ -54,6 +54,7 @@
 }
 
 .menu-box {
+  z-index: 5;
   background: #FFFFFF;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -568,12 +569,12 @@
   fill: white;
 }
 
-.catalog__header {
+.product__header {
   background: #F8F3F4;
   height: 148px;
 }
 
-.catalog__header__text {
+.product__header__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,18 +586,18 @@
           align-items: center;
 }
 
-.catalog__carousel {
+.product__carousel {
   height: 777px;
   background: #F7F7F7;
 }
 
-.catalog__carousel__area {
+.product__carousel__area {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.catalog__carousel__btn__prev, .catalog__carousel__btn__next {
+.product__carousel__btn__prev, .product__carousel__btn__next {
   border: none;
   outline: none;
   position: absolute;
@@ -614,12 +615,12 @@
   color: #F16D7F;
 }
 
-.catalog__carousel__btn__next {
+.product__carousel__btn__next {
   left: auto;
   right: 20px;
 }
 
-.catalog__carousel__wrap {
+.product__carousel__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +634,7 @@
   height: 100%;
 }
 
-.catalog__carousel__item {
+.product__carousel__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -649,9 +650,144 @@
           justify-content: center;
 }
 
-.catalog__carousel__img {
+.product__carousel__img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+.product__area {
+  padding: 80px 0 50px;
+  text-align: center;
+}
+
+.product__collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -60px;
+  height: 600px;
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+}
+
+.product__collection__header {
+  margin: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.product__collection__header__title {
+  margin: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+
+.product__collection__header__line {
+  margin: 12px;
+  width: 64px;
+  height: 3px;
+  background: #EF5B70;
+}
+
+.product__collection__text {
+  margin-top: 48px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  width: 555px;
+}
+
+.product__collection__price {
+  padding: 32px 0 64px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.product__collection__choose {
+  padding: 64px 0 48px;
+  width: 640px;
+  border-top: 1px solid #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__collection__choose__item {
+  padding: 0 11px;
+  background: none;
+  border: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.product__collection__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  height: 48px;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #FF6A6A;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.product__collection__btn__text {
+  padding-left: 22px;
+}
+
+.product__collection__btn:hover {
+  background: #F16D7F;
+  color: #FFFFFF;
+}
+
+.product__collection__btn:hover svg path {
+  fill: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
