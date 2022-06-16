@@ -1,0 +1,58 @@
+/* display (_settings.scss) */
+@mixin flexible () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* fonts (_settings.scss) */
+$font: 'Lato';
+$f-style: normal;
+$ttu: uppercase;
+$ttl: lowercase;
+@mixin txt-s () {
+    font-family: $font;
+    font-style: $f-style;
+    font-weight: 300;
+}
+@mixin txt-m () {
+    font-family: $font;
+    font-style: $f-style;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+@mixin txt-mm () {
+    font-family: $font;
+    font-style: $f-style;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin txt-l () {
+    font-family: $font;
+    font-style: $f-style;
+    font-weight: 700;
+}
+@mixin txt-xl () {
+    font-family: $font;
+    font-style: $f-style;
+    font-weight: 900;
+}
+/* Size (_settings.scss) */
+$ctnr-w: 1140px;
+/* Colors (_settings.scss) */
+$clr1: #E05C6E;
+$clr2: #F16D7F;
+$clr3: #FF6A6A;
+$clr4: #9F9F9F;
+$clr5: #222222;
+$clr6: #222224;
+$clr7: #5D5D5D;
+$clr8: #FBFBFB;
+$clr9: #E1E1E1;
+$clr10: #EAEAEA;
+$clr11: #5E5E5E;
+$clr12: #6F6E6E;
+$clr13: #F26376;
+$clr14: #EF5B70;
+$clr15: #EBEBEB;
